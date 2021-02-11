@@ -1,0 +1,184 @@
+.contact header{    
+    background-image: url(../assets/contact-header.jpg);
+    height: 50vh;
+    background-size: cover;
+    background-position-y: -40px;
+    background-position-x:0;
+    background-repeat: no-repeat;
+    h1{
+        color: $white;
+        margin-top:120px;
+    }
+}
+.contact .section1{
+    height: auto;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .infoUl{
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-start;
+    padding-left: 0;
+        a{
+            font-family: $secondaryFont;
+            font-size: 2rem;
+            font-weight: bold;  
+            color: $darkBlue;   
+            padding: 10px      
+        }
+}
+.contact .info{
+    padding: 40px 40px 60px  0;
+    color: $black;
+    p{
+        padding-left: 10px;
+    }
+}
+.contact .form{ 
+    position: absolute;   
+    top: -120px;
+    right: -50px;
+    height: 500px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 50px;
+    background-color: $darkBlue;
+    box-shadow: 15px 15px $yellow;
+    form{
+        padding: 35px 35px 35px 35px;
+    }
+    .firstRow{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 50px;   
+        margin-bottom: 30px;
+        .nameDiv,
+        .mailDiv{
+            width: 45%;            
+            border-bottom: 2px solid $yellow;
+        }
+        input[type=text],
+        input[type=email]{
+            width: 100%;
+            border: none;
+            font-family: $secondaryFont;
+            font-size: 2rem;
+            color: $white;
+            background-color: $darkBlue;
+            padding: 0 0 15px 15px;
+        }
+        input::placeholder,
+        input::placeholder{
+            color: $white;
+            opacity: 1;
+        }  
+    }
+}
+.contact form textarea{
+    border: 2px solid $yellow;
+    width:100%;
+    height:200px;
+    background-color: $darkBlue;
+    text-align: left;
+    padding:15px 15px;
+    margin-bottom: 30px;
+    font-family: $secondaryFont;
+    font-size: 2rem;
+    color: $white;
+    resize: none;    
+}
+.contact textarea::placeholder{
+        color: $white;
+        opacity: 1;          
+    }
+.contact button{
+    width: 100%;
+    background-color: $yellow;
+    color: $darkBlue;
+    padding: 5px 15px;
+    border: 2px solid transparent;    
+    line-height: 2.16rem;    
+}
+.contact button:hover,
+.contact button:focus {
+    color: $yellow;
+    background-color:$darkBlue;
+    border: 2px solid $yellow;
+}
+// responsive design
+@media (max-width:1315px){
+    .contact .section1{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        flex-wrap: wrap;
+        .form{
+            position: static;            
+            width: 80%;
+            height: 450px;
+            margin: 0 auto;
+        }
+        .info{            
+            display: flex; 
+            flex-direction: column;
+            flex-wrap: wrap;
+            align-content: center;
+            width: 100%; 
+            padding: 40px 40px 60px 40px;
+            .infoUl{
+                margin: 0 auto;
+            }
+            br{
+            display: none; 
+            }
+            p{
+                margin-bottom: 0;
+                text-align: center;
+            }      
+        }
+    }
+}
+@media (max-width:780px){
+    .contact header{
+        height: 40vh;
+        h1{
+            margin-top: 70px;
+        }
+    }
+    .contact .section1 .form{
+        width: 100%;
+        box-shadow: none;
+    }
+}
+@media (max-width:780px){
+    .contact header{
+        h1{
+            margin-top: 50px;
+        }
+    }
+}
+@media (max-width:500px){
+    .contact header{
+        display: inline-block;
+        background-position-y: unset;
+        background-size: auto;
+        height: 25vh;
+        h1{
+            margin-top: 50px;
+            margin-left: 20px;
+            width: 70%;
+        }
+    }
+    .contact .infoNav{
+        position: static;
+    }
+    .contact .form{
+        border-top: 2px solid $yellow;
+    }
+}
+

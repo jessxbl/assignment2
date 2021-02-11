@@ -1,0 +1,45 @@
+
+h1 {
+    font-size: 7.9rem;
+    font-family: $baseFont;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 4.5rem;
+    font-family: $baseFont;
+    line-height: 9.98rem;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 4rem;
+    font-family: $baseFont;
+    line-height: 5.8rem;
+    letter-spacing: 0.13rem;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 2.5rem;
+    font-family: $baseFont;
+    line-height: 5.8rem;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+}
+
+p{
+    font-size: 2rem;
+    font-family: $secondaryFont;
+    line-height: 2.8rem;
+    letter-spacing: 1px;
+    font-weight: 300;
+   
+}
+
+button{
+    font-family: $baseFont;
+    font-size: 2.24rem;
+    line-height: 4.16rem;
+    text-transform: uppercase;
+}

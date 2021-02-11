@@ -1,0 +1,97 @@
+@import "setup";
+@import "variables";
+@import "fonts";
+@import "blog";
+@import "contact";
+@import "home";
+@import "home_responsive";
+@import "navigation";
+
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
+html {
+    font-size: 62.5%;
+    
+}
+
+body{    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: $lightBlue;    
+}
+
+.parent {
+    flex-grow: 1;
+    
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+.wrapper{
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+    // border: 1px solid red;
+}
+
+
+button{
+    background-color: $yellow;
+    border: 2px solid transparent;
+    padding: 6px 15px;
+    transition: all 0.2s ease-in-out;
+}
+button:hover,
+button:focus {
+    background-color: $darkBlue;
+    color: $yellow;
+    border: 2px solid $yellow;
+}
+
+
+
+.first i,
+.second i {
+    color: $darkBlue;
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    background-color: $yellow;
+    border-radius: 50%;
+    text-align:center;
+    vertical-align: middle;
+    line-height: 50px;
+
+}
+
+footer {
+    height: 5%;
+    background-color: $yellow;
+    color: $darkBlue;
+    margin: 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 5px auto; 
+}
+
+
+@media (max-width:500px){
+    html {
+        font-size: 50%;
+    }    
+    .wrapper{
+        min-width: 480px;        
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+

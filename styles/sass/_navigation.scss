@@ -1,0 +1,72 @@
+nav{
+    label[for="toggle"]{
+        display: none;
+        }
+        input[type="checkbox"] {
+        display: none; 
+        }
+    ul{
+        display: flex;
+        width: 30%;
+        justify-content:flex-start;
+        margin-top: 0;
+        padding-top:20px;
+        li{
+            list-style: none;
+            margin-right: 30px;            
+            a{
+                text-decoration: none;
+                font-family: $secondaryFont;
+                font-size: 2rem;
+                font-weight: bold;
+                line-height: 2.9rem;
+                letter-spacing: 1px;
+                color: $white;
+                padding: 10px;
+                }
+            a:hover,
+            a:focus-within{
+                text-decoration: underline;
+                text-decoration-color:$yellow;
+                text-decoration-thickness: 3px;
+                text-decoration-skip: 2px;
+                text-underline-offset:10px;
+            }
+        }
+    }
+}
+// mobile style for navigation
+@media screen and (max-width:500px){
+    nav{     
+        label[for="toggle"]{
+            display: inline-block;
+            font-size: 35px;
+            color: $white;
+            padding: 5px;
+            position: absolute;
+            top: 0;
+            left: 15px;
+            z-index: 20;
+        }     
+        ul{
+            align-self: center;
+            margin-top: 0;
+            padding-top:10px;
+            margin-left: 60px;
+            position: absolute;
+            top: -30%;
+            transition: all 0.5s;
+            z-index: 20;
+            li{
+                margin:0;
+                a{                   
+                    padding: 15px;                    
+                }
+            }
+        }
+        input[type="checkbox"]:checked + ul {top: 0;}
+        label[for="toggle"]:hover{
+            color: $yellow;
+        }
+    }
+}
