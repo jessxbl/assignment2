@@ -36,6 +36,7 @@ nav{
     }
 }
 // mobile style for navigation
+
 @media screen and (max-width:500px){
     nav{     
         label[for="toggle"]{
@@ -49,12 +50,13 @@ nav{
             z-index: 20;
         }     
         ul{
+            display: none;
             align-self: center;
             margin-top: 0;
             padding-top:10px;
             margin-left: 60px;
             position: absolute;
-            top: -30%;
+            // top: -30%;
             transition: all 0.5s;
             z-index: 20;
             li{
@@ -64,9 +66,9 @@ nav{
                 }
             }
         }
-        input[type="checkbox"]:checked + ul {top: 0;}
-        label[for="toggle"]:hover{
-            color: $yellow;
-        }
+        // input[type="checkbox"]:checked + ul {top: 0;}
+        // label[for="toggle"]:hover{
+        //     color: $yellow;
+        // }
     }
-}
+ }

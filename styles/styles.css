@@ -1522,6 +1522,7 @@ nav ul li a:focus-within {
     z-index: 20;
   }
   nav ul {
+    display: none;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -1529,7 +1530,6 @@ nav ul li a:focus-within {
     padding-top: 10px;
     margin-left: 60px;
     position: absolute;
-    top: -30%;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
     z-index: 20;
@@ -1539,12 +1539,6 @@ nav ul li a:focus-within {
   }
   nav ul li a {
     padding: 15px;
-  }
-  nav input[type="checkbox"]:checked + ul {
-    top: 0;
-  }
-  nav label[for="toggle"]:hover {
-    color: #fdd908;
   }
 }
 
