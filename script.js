@@ -3,8 +3,20 @@
 
 
 
-const navBar = document.getElementsByClassName("fa-bars");
+const navBar = document.querySelector("i");
 console.log(navBar);
-const ulElement = document.querySelector("ul");
-console.log(ulElement);
 
+
+navBar.addEventListener("click", function(){
+
+    // ulElement.style.display = "flex";
+    let ulElement = document.querySelector("ul");
+    ulElement.classList.toggle("navMenu");
+    
+    console.log(ulElement);
+   
+
+});
+
+// ulElement.classList.toggle("navMenu");
+// ulElement.classList.toggle("ul");

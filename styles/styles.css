@@ -1522,9 +1522,10 @@ nav ul li a:focus-within {
     z-index: 20;
   }
   nav ul {
-    display: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
         align-self: center;
     margin-top: 0;
     padding-top: 10px;
@@ -1539,6 +1540,9 @@ nav ul li a:focus-within {
   }
   nav ul li a {
     padding: 15px;
+  }
+  .navMenu {
+    display: none;
   }
 }
 

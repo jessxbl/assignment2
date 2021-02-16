@@ -50,7 +50,7 @@ nav{
             z-index: 20;
         }     
         ul{
-            display: none;
+            display: flex;
             align-self: center;
             margin-top: 0;
             padding-top:10px;
@@ -66,9 +66,16 @@ nav{
                 }
             }
         }
+
+
+       
         // input[type="checkbox"]:checked + ul {top: 0;}
         // label[for="toggle"]:hover{
         //     color: $yellow;
         // }
     }
- }
+    .navMenu{
+            display: none;
+    }
+        
+}
