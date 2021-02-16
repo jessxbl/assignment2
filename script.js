@@ -1,22 +1,26 @@
 //click menu bars
 //click event toggles ul (nav) appearance or disappearance
 
-
-
 const navBar = document.querySelector("i");
-console.log(navBar);
-
 
 navBar.addEventListener("click", function(){
 
-    // ulElement.style.display = "flex";
     let ulElement = document.querySelector("ul");
     ulElement.classList.toggle("navMenu");
     
-    console.log(ulElement);
-   
-
 });
 
-// ulElement.classList.toggle("navMenu");
-// ulElement.classList.toggle("ul");
+//Form submission 
+
+const formElement = document.querySelectorAll("form");
+
+console.log(formElement);
+
+formElement.addEventListener("submit", function(event){
+    console.log("form is submitted");
+    event.preventDefault();
+    const inputElement = document.querySelectorAll("input");
+    const userInfo = inputElement.value;
+    console.log(userInfo);
+});
+
