@@ -19,20 +19,22 @@ console.log(formElement);
 formElement.addEventListener("submit", function(event){
     console.log("form is submitted");
     event.preventDefault();
-    // const inputElement = document.getElementsByClassName("message");
     const inputElement = document.getElementById("message");
-    // const userInfo = inputElement.value;
 
     userMessage = inputElement.value;
     console.log(userMessage);
 
+    const clearField = function(target){
+        target.value = "";
+    }
+
     if (userMessage) {
         alert("Thank you for submitting a form!");
-        inputElement.value = "";
         const userName = document.getElementById("name");
-        userName.value = "";
         const userEmail = document.getElementById("userEmail");
-        userEmail.value = "";
+        clearField(inputElement);
+        clearField(userName);
+        clearField(userEmail);
     }
     
 });
