@@ -551,7 +551,7 @@ button {
   margin-bottom: 30px;
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
-  color: #ffffff;
+  color: black;
   resize: none;
 }
 
@@ -872,22 +872,22 @@ button {
   resize: none;
 }
 
-.contact .message ::-webkit-input-placeholder {
+.contact .message::-webkit-input-placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.contact .message :-ms-input-placeholder {
+.contact .message:-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.contact .message ::-ms-input-placeholder {
+.contact .message::-ms-input-placeholder {
   color: #ffffff;
   opacity: 1;
 }
 
-.contact .message ::placeholder {
+.contact .message::placeholder {
   color: #ffffff;
   opacity: 1;
 }

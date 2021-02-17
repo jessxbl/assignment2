@@ -1,6 +1,4 @@
-//click menu bars
-//click event toggles ul (nav) appearance or disappearance
-
+//Menu button
 const navBar = document.querySelector("i");
 
 navBar.addEventListener("click", function(){
@@ -12,15 +10,30 @@ navBar.addEventListener("click", function(){
 
 //Form submission 
 
-const formElement = document.querySelectorAll("form");
+const formElement = document.querySelector("form");
 
 console.log(formElement);
+
+
 
 formElement.addEventListener("submit", function(event){
     console.log("form is submitted");
     event.preventDefault();
-    const inputElement = document.querySelectorAll("input");
-    const userInfo = inputElement.value;
-    console.log(userInfo);
+    // const inputElement = document.getElementsByClassName("message");
+    const inputElement = document.getElementById("message");
+    // const userInfo = inputElement.value;
+
+    userMessage = inputElement.value;
+    console.log(userMessage);
+
+    if (userMessage) {
+        alert("Thank you for submitting a form!");
+        inputElement.value = "";
+        const userName = document.getElementById("name");
+        userName.value = "";
+        const userEmail = document.getElementById("userEmail");
+        userEmail.value = "";
+    }
+    
 });
 
